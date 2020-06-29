@@ -68,7 +68,7 @@ for item in $-btn-border-types
 for type in $-btn-types
     .kd-btn-{type}
         background-color lookup('$-btn-'+ type +'-color')
-        border-color lookup('$-btn-'+ type +'-color')
+        border 1px solid lookup('$-btn-'+ type +'-color')
         color: #fff
         &:hover
         &:focus

@@ -1,6 +1,9 @@
 {
     "Button": "./components/Button/index.vue",
     "ButtonGroup": "./components/ButtonGroup/index.vue",
+    "Dropdown": "./components/Dropdown/index.vue",
+    "DropdownItem": "./components/DropdownItem/index.vue",
+    "DropdownMenu": "./components/DropdownMenu/index.vue",
     "Message": "./components/Message/index.vue",
     "Spin": "./components/Spin/index.vue"
 }

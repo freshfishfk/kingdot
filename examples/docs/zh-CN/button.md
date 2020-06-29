@@ -133,14 +133,14 @@
         <div class='row'>
             <Button-group>
                 <Button type='primary' @click='test'>菜单</Button>
-                <Button type='primary' icon='iconmoren_xinzeng' line></Button>
+                <Button type='primary' icon='iconmoren_xinzeng'></Button>
             </Button-group>
         </div>
         <div class='row'>
             <Button-group>
                 <Button type='primary'>按钮1</Button>
-                <Button type='primary' icon='iconmoren_xinzeng' line>按钮2</Button>
-                <Button type='primary' icon='iconmoren_xinzeng' line>按钮3</Button>
+                <Button type='primary' icon='iconmoren_xinzeng'>按钮2</Button>
+                <Button type='primary' icon='iconmoren_xinzeng'>按钮3</Button>
             </Button-group>
         </div>
         <div class='row'>

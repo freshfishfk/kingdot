@@ -1,18 +1,7 @@
 <template>
     <button
             class="kd-btn"
-            :class="[
-                text && type=='default' ? '' : `kd-btn-${type}`,
-                shape ? `kd-btn-${shape}` : '',
-                size ? `kd-btn-${size}` : '',
-                text ? `kd-btn-text-${type}` : '',
-                {
-                    'kd-btn-disabled': disabled,
-                    'kd-btn-hollow': hollow,
-                    'kd-btn-line': line,
-                    'kd-btn-loading': loading
-                }
-            ]"
+            :class="allClassAry"
             @click="btnClick"
     >
         <span
@@ -38,7 +27,6 @@
         >
             <slot/>
         </span>
-        <span>{{ translate('button.confirm') }}</span>
     </button>
 </template>
 
@@ -80,14 +68,26 @@
             text: {
                 type: Boolean,
                 default: false
-            },
-            line: {
-                type: Boolean,
-                default: false
             }
         },
         data() {
             return {};
+        },
+        computed: {
+            allClassAry() {
+                const allClassAry = [
+                    this.text && this.type === 'default' ? '' : `kd-btn-${this.type}`,
+                    this.shape ? `kd-btn-${this.shape}` : '',
+                    this.size ? `kd-btn-${this.size}` : '',
+                    this.text ? `kd-btn-text-${this.type}` : '',
+                    {
+                        'kd-btn-disabled': this.disabled,
+                        'kd-btn-hollow': this.hollow,
+                        'kd-btn-loading': this.loading
+                    }
+                ];
+                return allClassAry;
+            }
         },
         methods: {
             btnClick(e) {
