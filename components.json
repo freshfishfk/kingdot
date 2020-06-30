@@ -5,5 +5,6 @@
     "DropdownItem": "./components/DropdownItem/index.vue",
     "DropdownMenu": "./components/DropdownMenu/index.vue",
     "Message": "./components/Message/index.vue",
-    "Spin": "./components/Spin/index.vue"
+    "Spin": "./components/Spin/index.vue",
+    "Upload": "./components/Upload/index.vue"
 }

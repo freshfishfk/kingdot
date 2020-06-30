@@ -1,15 +1,36 @@
-### 基础用法
-:::demo #基础用法 按钮主要有4中类型：主要按钮，次要按钮，虚线按钮，文字按钮。
+### 上传
+:::demo #上传基础用法 上传文件。
 
 ```html
 <template>
-    <Dropdown>
-        <Button text>下拉菜单<i class="kdicon kd-icon-right iconsousuo"></i></Button>
-        <DropdownMenu>
-            <DropdownItem>测试</DropdownItem>
-            <DropdownItem>测试</DropdownItem>
-        </DropdownMenu>
-    </Dropdown>
+    <Upload>
+        <Button>点击上传</Button>
+    </Upload>
 </template>
 ```
 :::
+
+### 多选上传
+:::demo #上传基础用法 上传文件。
+
+```html
+<template>
+    <Upload multiple>
+        <Button>点击上传</Button>
+    </Upload>
+</template>
+```
+:::
+
+### 照片墙上传
+:::demo #上传基础用法 上传文件。
+
+```html
+<template>
+    <Upload multiple>
+
+    </Upload>
+</template>
+```
+:::
+

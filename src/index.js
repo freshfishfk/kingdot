@@ -5,6 +5,7 @@ import DropdownItem from '../components/DropdownItem/index.js';
 import DropdownMenu from '../components/DropdownMenu/index.js';
 import Message from '../components/Message/index.js';
 import Spin from '../components/Spin/index.js';
+import Upload from '../components/Upload/index.js';
 
 const components = [
     Button,
@@ -13,7 +14,8 @@ const components = [
     DropdownItem,
     DropdownMenu,
     Message,
-    Spin
+    Spin,
+    Upload
 ];
 
 const install = (Vue) => {
@@ -31,5 +33,6 @@ export default {
     DropdownItem,
     DropdownMenu,
     Message,
-    Spin
+    Spin,
+    Upload
 };

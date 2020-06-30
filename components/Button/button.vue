@@ -91,8 +91,9 @@
         },
         methods: {
             btnClick(e) {
-                if (this.disabled || this.loading) return;
-                this.$emit('click', e);
+                if (!this.disabled || !this.loading) {
+                    this.$emit('click', e);
+                }
             }
         }
     };
